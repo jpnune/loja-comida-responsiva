@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif; 
+}
+
+header {
+    background-color: #0067da;
+    color: #eee;
+    padding: 1.5em 0.2em ;
+    margin-bottom: 1.5em; 
+}
+
+header li{
+    list-style-type: none;
+    margin: 0.20em 0;
+    
+}
+
+header i{
+    display: block;
+    width: 50%;
+}
+
+header a {
+    text-decoration: none;
+    color: #EEE;
+    font-weight: bolder;  
+}
+
+
+body {
+    background-color: #EEE;
+}
+
+main img{
+    display: flex;
+    margin:  1em 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 1em 0;
+    border: 2px solid #0067da;
+}
+
+h2 {
+    color: #0067da;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-bottom: 0.25em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+footer{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #13447c;
+    color: #EEE;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.vitrine a{
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    background-color: #0067da;
+    color: #EEE;
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    
+    header li{
+        margin-left: 1em;
+    }
+
+    header  ul{
+        display: flex;
+    }
+    
+    .cabecalho {
+        justify-content: space-between;
+    }
+    
+    .vitrine-tablet {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    header li{
+        margin-left: 1em;
+    }
+
+    header  ul{
+        display: flex;
+    }
+   
+    body{
+        font-size: 1.5em;
+    }
+
+    
+    #imagem-capa {
+        margin-right: 1em;
+    }
+    
+    #capa{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+    }
+
+    .vitrine-tablet {
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        justify-content: space-between;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+ 
+}
+
